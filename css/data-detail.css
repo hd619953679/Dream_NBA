@@ -1,0 +1,186 @@
+section{margin-top: 50px;}
+
+.data-nav{
+    border-radius: 5px;
+    line-height: 60px;
+    margin:30px 0;
+    background: rgba(3,3,3,.8)
+}
+.data-nav>div{
+    text-align: left;
+}
+div.checkMore{
+    text-align: right;
+}
+@media only screen and (max-width: 768px){
+    .data-nav h3{
+        font-size:20px;
+    }
+    .data-nav>div{
+        text-align: center;
+    }
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.tab-box{display: inline-block}
+.data-tab{
+    color:#333;
+    font-weight:500;
+    font-size:18px;
+    display: inline-block;
+    background: #dddddd;
+    width:30%;
+    height:30px;
+    line-height:30px;
+    margin:10px 2%;
+    text-align: center;
+    cursor: pointer;
+}
+.data-tab:hover{
+    background: #F23D63;
+    color:#fff;
+    text-decoration: none;
+}
+.tab-box>a.active{
+    background: #F23D63;
+    color:#fff;
+    text-decoration: none;
+}
+.data-nav>h3{
+    color:#eee;
+    display: inline-block;
+    margin-left: 30px;
+}
+.data-nav>.checkMore>a{
+    display: inline-block;
+    color: #ddd;
+    font-size:16px;
+    margin-top:6px;
+}
+.data-nav>.checkMore>a:hover{
+    color:#F23D63;
+    text-decoration: none;
+}
+.data-nav>.checkMore>a>span{
+    font-size:12px;
+}
+
+/*数据表*/
+div.table-responsive .table th,
+div.table-responsive .table td{
+    vertical-align: middle;
+    text-align: center;
+}
+.table th>.rankArrow{
+    display: inline-block;
+    width: 9px;
+    height:9px;
+    margin-left:5px;
+    background: url('../images/team/rankArrow.png') no-repeat 0 -3px;
+    background-size: 27px 24px!important;
+}
+.table th.selected{
+    background: rgba(3,3,3,.8);
+}
+.table th.selected>span.rankArrow{
+    background-position: -9px -3px;
+}
+.table th.sort{
+    cursor: pointer;
+}
+.table th{
+    color:#00D2DB;
+    font-size:15px;
+    font-size:1.5rem;
+    position: relative;
+    cursor: default;
+}
+.table>tbody>tr>td:first-child>span{
+    display: inline-block;
+    width:36px;
+    height:36px;
+    line-height: 36px;
+    border-radius: 5px;
+    background: #bbb;
+    color:#fff;
+    font-size:16px;
+}
+.table>tbody>tr>td:nth-child(2)>span{
+    display: block;
+}
+    /*.table>tbody>tr:first-child>td:first-child>span{*/
+        /*background: #F23D63;*/
+    /*}*/
+    /*.table>tbody>tr:nth-child(2)>td:first-child>span{*/
+        /*background: #0090EE;*/
+    /*}*/
+    /*.table>tbody>tr:nth-child(3)>td:first-child>span,*/
+    /*.table>tbody>tr:nth-child(4)>td:first-child>span,*/
+    /*.table>tbody>tr:nth-child(5)>td:first-child>span*/
+    /*{*/
+        /*background: #606060;*/
+    /*}*/
+.table img{
+    height:50px;
+}
+
+div.dataMain{display: none}
+div.active{display: block}
+
+.checkPage{
+    position: relative;
+    left: 0;
+    transition: left .3s;
+}
+.checkPage>li{
+    float: left;
+    width:25px;
+    height:25px;
+    line-height: 25px;
+    text-align: center;
+    border:1px solid #00b3ee;
+    color:#fff;
+    cursor: pointer;
+    margin-left:5px ;
+}
+@media only screen and (min-width: 992px) {
+    .checkPage>li:hover{
+        background: #F23D63;
+        border:0;
+    }
+}
+
+.checkPage>li.selected{
+    background: #F23D63;
+    border:0;
+}
+.page:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.page{
+    display: inline-block;
+    float: right;
+    margin: 30px 0;
+    height: 25px;
+    overflow: hidden;
+}
+.prev,.next{
+    float: right;
+    width:30px;
+    margin: 30px 0;
+    height:25px;
+    line-height: 25px;
+    text-align: center;
+    font-size:18px;
+    cursor: pointer;
+}
+.prev:hover,.next:hover{
+    color:#F23D63
+}
+.next{
+    margin-left:5px;
+}

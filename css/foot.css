@@ -1,0 +1,28 @@
+#footer .footer{
+    box-shadow: 0px 0px 20px rgba(256,0,0,0.8);
+    background: rgba(25,25,25,0.8);
+}
+.foot-content{
+    list-style: none;
+    padding: 20px 0;
+}
+.foot-content>li>h4{
+    color:#eee;
+}
+.foot-content>li{
+    font-size: 12px;
+    color:#337ab7;
+    cursor: pointer;
+    padding: 4px;
+    text-align: center;
+}
+.foot-content>li>span:hover{
+    color:#fff;
+}
+#Legal-information{
+    text-align: center;
+}
+#Legal-information>div{
+    padding: 5px 0;
+}
+#footer .en{color:#337ab7}

@@ -1,0 +1,221 @@
+@import "bootstrap.less";
+//导航部分
+//body{
+//  height:2000px;
+//}
+a:focus,a:active:focus,.btn:focus,.btn:active:focus {outline: 0}
+*{margin: 0;padding: 0}
+//div[class^=col]{overflow: hidden}
+.lf{float: left}
+.rt{float: right}
+.clear:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+
+#nav{
+  margin-bottom: 0;
+  #bs-item ul.navbar-nav{
+    font-weight:900;
+    font-size:1.1em;
+    width: 55%;
+  }
+  #bs-item ul.navbar-nav>li{
+    margin-left:2%;
+    margin-right:1%;
+  }
+  form.navbar-form{
+    width:30%;
+    padding: 0;
+    border: 0;
+    .form-group{
+      width: 70%;
+    }
+  }
+
+  @media only screen and (max-width: 767px){
+    form.navbar-form{
+      width:100%;
+    }
+    div#log-in{
+      width:25%;
+    }
+    form.navbar-form .form-group{
+      width: 100%;
+    }
+  }
+  .navbar-form .onblur{
+    border-color:transparent;
+    border-bottom-color:#ccc;
+    width: 90%;
+    border-radius: 0;
+    background: transparent;
+  }
+  .navbar-form .onfocus{
+    border-radius: 5px;
+    border-color:#fff;
+    width: 90%;
+    background: transparent;
+    color:#eee;
+    box-shadow: 0 0 10px #21A9C2;
+  }
+  div.navbar-header>a{
+    position: relative;
+    left:10px;
+    background: url("../images/nba-logo.png");
+    background-size: 100% 100%;
+  }
+  .login{
+    width:15%;
+    height:60px;
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .loginOut{
+    width:15%;
+    height:60px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 10px;
+  }
+  @media only screen and (max-width: 991px){
+    .loginOut{
+      padding-top: 0;
+    }
+  }
+  .login>a{
+    display: inline-block;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+  }
+  .login>a:hover{
+    box-shadow: 0 0 20px rgba(252,247,0,0.7);
+  }
+  #wb{background: url("../images/wb.png");
+    background-size: cover}
+  #qq{background: url("../images/qq.png");
+    background-size: cover}
+  #wx{background: url("../images/wx.png");
+    background-size: cover}
+  #team{position: relative;cursor: pointer}
+  .team-list:before{
+    content:"";
+    display: inline-block;
+    border:10px solid transparent;
+    border-bottom-color:rgba(3, 3, 3, 0.8);
+    position: absolute;
+    top:-20px;
+    left:20px;
+  }
+  .team-list{
+    list-style:none;
+    padding: 0;
+    position: absolute;
+    z-index:500;
+    width:175%;
+    background: rgba(3, 3, 3, 0.8);
+    border-radius:5px;
+    padding: 5px;
+    display: none;
+  }
+  .team-list>li{margin: 0 10px 10px ;cursor: pointer;color: #00b3ee}
+  .team-list>li:first-child{margin-top: 10px}
+  .team-list>li:hover{color: #eee}
+  .team-name{
+    list-style:none;
+    //padding:  5px;
+    margin-left: 20px;
+    display: none;
+  }
+  .team-name>li{margin: 5px;}
+  .team-name>li>a{color:#E8851D;}
+  .team-name>li:hover >a{color:#18A15F;text-decoration: none}
+  //球员下拉菜单
+  .playerDrop{display: none}
+  @media only screen and (min-width: 992px){
+    #player .playerDrop{display: inline-block}
+    #player:hover>div.playerDropMenu{
+      display: block;
+    }
+  }
+  #player{position: relative}
+  .playerDropMenu:before{
+    content:"";
+    display: inline-block;
+    border:10px solid transparent;
+    border-bottom-color: #004576;
+    position: absolute;
+    top:-20px;
+    left:321px;
+  }
+  .playerDropMenu{
+    display: none;
+    background: #fff;
+    position: absolute;
+    top:60px;
+    left:-300px;
+    z-index: 400;
+    padding: 0 3px;
+    border-bottom: 2px solid #d33556;
+    .playerDropMenuTitle{
+      padding-left: 42px;
+      padding-bottom: 35px;
+      color:#fff;
+      margin:0;
+      height:30px;
+      line-height: 35px;
+      font-weight: 700;
+      font-size: 16px;
+      background: url("../images/player-list/superStar-bg.png") no-repeat #004576;
+    }
+    .playerDropMenuContent{padding: 20px}
+  }
+  .playerDropMenuContent{width:100%}
+  .playerDropMenuContent>ul>li{
+    text-align: center;
+    float: left;
+    width:10%;
+    display: block;
+    margin:15px 0;
+    img,span{cursor: pointer}
+    img:hover+span{color:#F23D63}
+    span:hover{
+      color:#F23D63;
+    }
+    span{
+      display: block;
+      margin: auto;
+      margin-top:5px;
+      color:#333;
+      height:21px;
+      overflow: hidden;
+    }
+  }
+
+}//nav over
+
+
+//模态登录
+#myModal{
+  color:#ddd;
+  .modal-header{
+    border-bottom:0;
+  }
+  #loginTip{
+    margin-left:20%;
+    height:20px;
+    text-align: center;
+  }
+  .tip{color:#afa;}
+  .false{color:red}
+  .modal-body .ips{border-color:#fff}
+  #login-btn{background: #afa;color:#f00}
+  #register{position: relative;left:10%;color:#ddd}
+
+}

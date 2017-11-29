@@ -1,0 +1,181 @@
+ul{
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+.title-bar {
+    height:100px;
+    margin:30px 0;
+    background: rgba(0,0,0,.3);
+}
+.title{
+    height:100px;
+    line-height: 100px;
+    text-align: center;
+    font-size:20px;
+    color:#fff;
+}
+#choose-left,.txt-vs,#choose-right,#btns{
+    display: inline-block;
+}
+#choose-left,#choose-right{
+    width: 100%;
+    height: 100px;
+    padding-top: 5px;
+}
+#btns{
+    width: 100%;
+    height: 100px;
+    padding-top: 15px;
+}
+#btns>p{
+    text-align: center;
+    height:30px;
+    line-height: 30px;
+    background: rgba(220,74,61,0.5);
+    color:#fff;
+    cursor: pointer;
+}
+#btns>p:hover{
+    background: rgba(74,13,24,0.7)
+}
+.random{
+    height:100px;
+    line-height:100px;
+}
+#random{
+    display: inline-block;
+    width:100%;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    color:#fff;
+    background: rgba(220,74,61,0.5);
+    cursor: pointer;
+}
+#random:hover{
+    background: rgba(74,13,24,0.7)
+}
+@media screen and (max-width: 768px) {
+    #choose-left,#choose-right{
+        width:100%;
+    }
+}
+#btns{overflow: hidden}
+.show-choose{overflow: hidden}
+.choose:hover{
+    color:#faa;
+}
+.choose{
+    cursor: pointer;
+    width:100%;
+    height:30px;
+    line-height:30px;
+    border:1px solid #00b3ee;
+    margin: 10px 0;
+    color:#8754F6;
+    padding-left: 10px;
+    border-radius: 5px;
+    background: url("../images/select.png") no-repeat scroll 95% 50%       transparent;
+    background-size: 15px 10px ;
+    position: relative;
+}
+.choose-dropMenu{
+    position: absolute;
+    z-index: 100;
+    left:0px;
+    border-radius:5px;
+    width: 100%;
+    height:0;
+    background: #fff;
+    /*overflow-x: hidden;*/
+    overflow: auto;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    color:#000;
+}
+.choose-dropMenu::-webkit-scrollbar{width:3px;height:3px}
+::-webkit-scrollbar-track{background-color: #F5F5F5;}
+::-webkit-scrollbar-thumb{background-color:#00aff0;}
+::-webkit-scrollbar-thumb:hover {background-color:#9c3}
+::-webkit-scrollbar-thumb:active {background-color:#00aff0}
+
+.choose-dropMenu>li{
+    height:30px;
+    width: 100%;
+    line-height:30px;
+    text-align: center;
+    background: #fff;
+}
+.choose-dropMenu>li:hover{
+    background: #09BFEA;
+    color:#fff;
+}
+.ct-ctrl .selected{background: #09BFEA}
+
+
+
+/*数据部分*/
+.show-data{
+    margin: 50px 0;
+}
+img.media-object{
+    width:140px;
+}
+div.media{
+    padding-left: 50px;
+    padding-top: 50px;
+}
+@media only screen and (max-width: 1024px) {
+    img.media-object{
+        width:100px;
+    }
+    h4.media-heading,h4.media-heading+h4{
+        font-size:17px;
+    }
+    div.media-body{
+        font-size:14px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    img.media-object{
+        width:85px;
+    }
+    h4.media-heading,h4.media-heading+h4{
+        font-size:15px;
+    }
+    div.media-body{
+        font-size:12px;
+    }
+}
+@media only screen and (max-width: 767px){
+    div.media{
+        width:45%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    #random{
+        width:50%;
+        display: block;
+        margin: 10px auto;
+    }
+}
+@media only screen and (max-width: 500px){
+    div.media{
+        width:65%;
+        margin:0 auto;
+        padding: 20px 0;
+    }
+    img.media-object{
+        width:70px;
+    }
+    h4.media-heading,h4.media-heading+h4{
+        font-size:14px;
+    }
+    div.media-body{
+        font-size:10px;
+    }
+}

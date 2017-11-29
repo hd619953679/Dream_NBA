@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <link rel="icon" href="images/bg/favicon.ico"/>
+    <title>NBA数据对比</title>
+    <link rel="stylesheet" href="css/nav.css"/>
+    <link rel="stylesheet" href="css/data-contrast.css">
+    <link rel="stylesheet" href="css/foot.css"/>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <nav class="navbar navbar-default" id="nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"                    data-target="#bs-item">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-item">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="data-statistic.html">数据统计</a></li>
+                    <li id="team">
+                        <a>球队<span class="caret"></span></a>
+                        <ul class="team-list">
+                            <li>大西洋赛区
+                                <ul class="team-name">
+                                    <li><a href="team.html">凯尔特人</a></li>
+                                    <li><a href="team.html">篮网</a></li>
+                                    <li><a href="team.html">尼克斯</a></li>
+                                    <li><a href="team.html">76人</a></li>
+                                    <li><a href="team.html">猛龙</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                西北赛区
+                                <ul class="team-name">
+                                    <li><a href="team.html">掘金</a></li>
+                                    <li><a href="team.html">开拓者</a></li>
+                                    <li><a href="team.html">森林狼</a></li>
+                                    <li><a href="team.html">雷霆</a></li>
+                                    <li><a href="team.html">爵士</a></li>
+                                </ul>
+                            </li>
+                            <li>中部赛区
+                                <ul class="team-name">
+                                    <li><a href="team.html">公牛</a></li>
+                                    <li><a href="team.html">骑士</a></li>
+                                    <li><a href="team.html">活塞</a></li>
+                                    <li><a href="team.html">步行者</a></li>
+                                    <li><a href="team.html">雄鹿</a></li>
+                                </ul>
+                            </li>
+                            <li>太平洋赛区
+                                <ul class="team-name">
+                                    <li><a href="team.html">勇士</a></li>
+                                    <li><a href="team.html">快船</a></li>
+                                    <li><a href="team.html">湖人</a></li>
+                                    <li><a href="team.html">太阳</a></li>
+                                    <li><a href="team.html">国王</a></li>
+                                </ul>
+                            </li>
+                            <li>东南赛区
+                                <ul class="team-name">
+                                    <li><a href="team.html">老鹰</a></li>
+                                    <li><a href="team.html">黄蜂</a></li>
+                                    <li><a href="team.html">热火</a></li>
+                                    <li><a href="team.html">魔术</a></li>
+                                    <li><a href="team.html">奇才</a></li>
+                                </ul>
+                            </li>
+                            <li>西南赛区
+                                <ul class="team-name">
+                                    <li><a href="team.html">小牛</a></li>
+                                    <li><a href="team.html">火箭</a></li>
+                                    <li><a href="team.html">灰熊</a></li>
+                                    <li><a href="team.html">鹈鹕</a></li>
+                                    <li><a href="team.html">马刺</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="data-contrast.html">数据对比</a></li>
+                    <li id="player">
+                        <a href="player.html">球员<span class="playerDrop caret"></span></a>
+                        <div class="playerDropMenu">
+                            <h4 class="playerDropMenuTitle">现役巨星</h4>
+                            <div class="playerDropMenuContent">
+                                <ul class="clear">
+                                    <li>
+                                        <img src="images/player-list/1.jpg" alt=""/>
+                                        <span>詹姆斯</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/player-list/2.jpg" alt=""/>
+                                        <span>库里</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/player-list/3.jpg" alt=""/>
+                                        <span>哈登</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/player-list/4.jpg" alt=""/>
+                                        <span>杜兰特</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/player-list/5.jpg" alt=""/>
+                                        <span>莱昂纳德</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/player-list/6.jpg" alt=""/>
+                                        <span>威斯布鲁克</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/player-list/7.jpg" alt=""/>
+                                        <span>林书豪</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/player-list/8.jpg" alt=""/>
+                                        <span>戴维斯</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/player-list/9.jpg" alt=""/>
+                                        <span>韦德</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/player-list/10.jpg" alt=""/>
+                                        <span>安东尼</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/player-list/11.jpg" alt=""/>
+                                        <span>霍华德</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/player-list/12.jpg" alt=""/>
+                                        <span>乔治</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/player-list/13.jpg" alt=""/>
+                                        <span>保罗</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/player-list/14.jpg" alt=""/>
+                                        <span>格里芬</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/player-list/15.jpg" alt=""/>
+                                        <span>欧文</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/player-list/16.jpg" alt=""/>
+                                        <span>汤普森</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/player-list/17.jpg" alt=""/>
+                                        <span>诺维茨基</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/player-list/18.jpg" alt=""/>
+                                        <span>利拉德</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/player-list/19.jpg" alt=""/>
+                                        <span>唐斯</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/player-list/20.jpg" alt=""/>
+                                        <span>考辛斯</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div id="log-in" class="login navbar-right">
+                    <!--<a href="#myModal" data-toggle="modal" id="wb"></a>-->
+                    <!--<a href="#myModal" data-toggle="modal" id="qq"></a>-->
+                    <!--<a href="#myModal" data-toggle="modal" id="wx"></a>-->
+                </div>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input id="navbar-search" type="text" class="form-control onblur" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+<!--模态登录框-->
+<!--导航登录区-->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;</button>
+                    <h4 class="modal-title" id="myModalLabel">使用QQ账号登陆</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form class="form-horizontal" id=login-form>
+                        <div id="loginTip"></div>
+                        <div class="form-group">
+                            <label for="uname" class="col-sm-2 control-label">
+                                用户名&nbsp;&nbsp;:
+                            </label>
+                            <div class="col-sm-10">
+                                <input type="text" autofocus class="ips form-control"
+                                       id="uname" placeholder="请输入邮箱">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="upwd" class="col-sm-2 control-label">
+                                密码&nbsp;&nbsp;:
+                            </label>
+                            <div class="col-sm-10">
+                                <input type="password" class="ips form-control"
+                                       id="upwd" placeholder="请输入密码">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <div class="checkbox">
+                                    <label>
+                                        <input id="rememberMe" type="checkbox"> 记住密码
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button id="login-btn" type="button"
+                                        class="btn btn-default">登录</button>
+                                <a id="register" href="register.html">还没账号吗?点我注册</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="container-fluid">
+        <header class="title-bar">
+            <div class="row">
+                <div class="col-md-4 hidden-xs hidden-sm">
+                    <div class="title">NBA数据对比-球队</div>
+                </div>
+                <div class="col-md-8 col-xs-12">
+                    <div class="row text-nowrap ct-ctrl">
+                        <div class="col-xs-4 col-sm-3 col-md-2">
+                            <div id="choose-left">
+                                <div class="choose choose-team-left">
+                                    <div id="choose-team1" class="show-choose">勇士</div><!--勇士-->
+                                    <ul id="team1-menu" class="choose-dropMenu">
+                                        <!--<li>湖人</li>-->
+                                        <!--<li>热火</li>-->
+                                        <!--<li>雷霆</li>-->
+                                        <!--<li>雷霆</li>-->
+                                        <!--<li>雷霆</li>-->
+                                        <!--<li>雷霆</li>-->
+                                        <!--<li>雷霆</li>-->
+                                    </ul>
+                                </div>
+                                <div class="choose choose-player-left">
+                                    <div id="choose-player1" class="show-choose">凯文-杜兰特</div><!--杜兰特-->
+                                    <ul id="player1-menu" class="choose-dropMenu">
+                                        <!--<li>科比</li>-->
+                                        <!--<li>科比</li>-->
+                                        <!--<li>科比</li>-->
+                                        <!--<li>科比</li>-->
+                                        <!--<li>科比</li>-->
+                                        <!--<li>科比</li>-->
+                                        <!--<li>科比</li>-->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-2">
+                            <!--<div class="txt-vs">VS</div>-->
+                            <div id="btns">
+                                <p id="contrast-team">对比球队</p>
+                                <p id="contrast-player">对比球员</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 col-md-2">
+                            <div id="choose-right">
+                                <div class="choose choose-team-right">
+                                    <div id="choose-team2" class="show-choose">骑士</div><!--勇士-->
+                                    <ul id="team2-menu" class="choose-dropMenu">
+                                        <!--<li>湖人</li>-->
+                                        <!--<li>热火</li>-->
+                                        <!--<li>雷霆</li>-->
+                                        <!--<li>雷霆</li>-->
+                                        <!--<li>雷霆</li>-->
+                                        <!--<li>雷霆</li>-->
+                                        <!--<li>雷霆</li>-->
+                                    </ul>
+                                </div>
+                                <div class="choose choose-player-right">
+                                    <div id="choose-player2" class="show-choose">勒布朗-詹姆斯</div><!--科比-->
+                                    <ul id="player2-menu" class="choose-dropMenu">
+                                        <!--<li>科比</li>-->
+                                        <!--<li>科比</li>-->
+                                        <!--<li>科比</li>-->
+                                        <!--<li>科比</li>-->
+                                        <!--<li>科比</li>-->
+                                        <!--<li>科比</li>-->
+                                        <!--<li>科比</li>-->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-2">
+                            <div class="random">
+                                <span id="random">随机对比</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--数据展示区-->
+        <div class="row show-data">
+            <div class="col-sm-4 col-xs-12">
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="team.html">
+                            <img class="media-object" id="logo-left" src="images/team/ys.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body media-middle">
+                        <h4 class="media-heading" id="ch-name-left">金州勇士</h4>
+                        <h4 id="en-name-left">Golden State Warriors</h4>
+                        <span id="info-left">67胜15负 / 西部第1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <canvas id="myChart" width="400" height="300"></canvas>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="team.html">
+                            <img class="media-object" id="logo-right" src="images/team/qs.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body media-middle">
+                        <h4 class="media-heading" id="ch-name-right">克里夫兰骑士</h4>
+                        <h4 id="en-name-right">Cleveland Cavaliers</h4>
+                        <span id="info-right">51胜31负 / 东部第2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<footer id="footer"></footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/Chart.js"></script>
+<!--<script src="js/echarts.min.js"></script>-->
+<script src="js/data-contrast.js"></script>
+<!-- <script src="js/bootlint.js"></script> 
+<script> bootlint.showLintReportForCurrentDocument([]);</script>
+-->
+</body>
+</html>
